@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "axios": "^1.8.3",
+    "fast-xml-parser": "^5.0.9",
+    "lodash": "^4.17.21",
+    "typescipt": "^1.0.0",
+    "zod": "^3.24.2"
+  }
+}
