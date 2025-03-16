@@ -1,5 +1,9 @@
 # AUR TypeScript Wrapper
 A simple wrapper for RPC API and RSS for AUR (Arch User Repository)
+## Install
+```shell
+npm install aur-wrapper 
+```
 
 ## Configuration
 Configure the wrapper instance before using it.
