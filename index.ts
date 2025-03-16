@@ -1,5 +1,5 @@
-import AurWebRpc from "./rpc";
-import AurWebRss from "./rss";
+import AurWebRpc from "./src/rpc";
+import AurWebRss from "./src/rss";
 
 export default class AurWebWrapper {
     public readonly rpc: AurWebRpc;
