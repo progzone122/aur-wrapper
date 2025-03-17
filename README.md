@@ -4,6 +4,31 @@ A simple wrapper for RPC API and RSS for AUR (Arch User Repository)
 ```shell
 npm install aur-wrapper 
 ```
+## Example using
+RPC API:
+```ts
+import AurWebWrapper from "aur-wrapper";
+
+let wrapper: AurWebWrapper = new AurWebWrapper({
+    proxy: true
+});
+
+wrapper.rpc.getPackageInfo("warp-gui").then((info) => {
+    if (info.success) {
+        console.log(info);
+    } else {
+        console.error(info)
+    }
+})
+
+wrapper.rss.getLatestPackages().then((packages) => {
+    if (packages.success) {
+        console.log(packages.data);
+    } else {
+        console.error(packages.error);
+    }
+})
+```
 
 ## Configuration
 Configure the wrapper instance before using it.
