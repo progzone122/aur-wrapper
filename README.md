@@ -28,6 +28,20 @@ wrapper.rss.getLatestPackages().then((packages) => {
         console.error(packages.error);
     }
 })
+
+wrapper.rpc.getPackagesInfo(["warp-gui", "mixerdialog"]).then((info) => {
+    if (info.success) {
+        console.log(info);
+    } else {
+        console.error(info)
+    }
+})
+
+wrapper.rpc.search("warp").then(result => {
+    if (result.success) {
+        console.log(result.data.results.slice(0, 2));
+    }
+});
 ```
 
 ## Configuration
