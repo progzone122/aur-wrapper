@@ -5,7 +5,6 @@ A simple wrapper for RPC API and RSS for AUR (Arch User Repository)
 npm install aur-wrapper 
 ```
 ## Example using
-RPC API:
 ```ts
 import AurWebWrapper from "aur-wrapper";
 
